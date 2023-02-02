@@ -1,38 +1,101 @@
-.App {
+#app-title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#copyright {
+  text-align: center;
+  font-size: 0.8rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  border-radius: 0.2rem;
+  box-shadow: 0px 1px 1px -1px;
+ 
+  /* default colours */
+  background-color: #efefef;
+  border: 1px solid rgb(189, 189, 189);
+  transition-property: background-color;
+  transition-duration: 300ms;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: rgb(189, 189, 189);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete {
+  background-color: rgb(255, 128, 128);
+  border: 1px solid rgb(255, 100, 100);
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
+.delete:hover {
+  background-color: rgb(255, 100, 100);
+  cursor: pointer;
+}
+
+.add {
+  background-color: rgb(128, 179, 255);
+  border: 1px solid rgb(94, 158, 255);
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
+.add:hover {
+  background-color: rgb(94, 158, 255);
+  cursor: pointer;
+}
+/* .delete-button {
+  background-color: rgb(255, 148, 148);
+} */
+
+.list-container {
+  background-color: rgb(226, 226, 226);
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+.ul-list-section {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list-section {
+  background-color: rgb(244, 244, 244);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-shadow: 0px 1px 1px -1px rgb(57, 57, 57);
+  list-style-type: ar;
+}
+
+.list-title {
+  font-size: 1.3rem;
+}
+
+.input-box {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 15rem;
+  border: 1px solid #818181;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
 }
