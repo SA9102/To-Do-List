@@ -1,4 +1,4 @@
-# To-Do-List
+# To-Do List
 
 A simple list-creating application made with React.
 
